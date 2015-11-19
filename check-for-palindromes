@@ -6,7 +6,7 @@ function palindrome(str) {
   var removePunctuation = hyphenProof.replace(/\W/g,"");
   var removeSpaces = removePunctuation.replace(/\s/g,"");
   var finalString = removeSpaces.toLowerCase();
-  if (finalString === finalString.split('').reverse('').join('')) {
+  if (finalString === finalString.split('').reverse().join('')) {
     return true;
   } else {
     return false;
